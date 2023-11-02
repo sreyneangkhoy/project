@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all .2s linear;
+    /* font-family: 'Battambang', Arial, Helvetica, sans-serif; */
+}
+#navbar{
+   background-color: grey;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: greenyellow;
+}
+.navbar-nav{
+   margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 17px;
+    font-weight:550;
+    color: black;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-item .nav-link:hover{
+    background-color:rgba(172, 255, 47, 0.776);
+    color:red;
+}
+.navbar form button{
+    background-color: rgba(172, 255, 47, 0.836);
+    color: black;
+    border-radius: 5px;
+   border: none;
+}
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/bg5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    color: white;
+    position: relative;
+}
+.home .content{
+    text-align: center;
+    padding-top: 170px;
+}
+.changecontent::after{
+   content: '';
+   color: rgba(172, 255, 47, 0.685);
+   animation: changetext 15s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "បូកគោ";}
+    10%{content: 'វីគិរីរម្យ';}
+    20%{content: 'ប្រាសាទបាសាក់';}
+    30%{content: 'ភ្នំព្រះរាជទ្រព្យ';}
+    40%{content: 'ឆ្នេរមាស់ឆ្នេរប្រាក់';}
+    50%{content: 'ទឹកជ្រោះប៊ូស្រា';}
+    60%{content: 'ទឹកធ្លាក់ច្រកល្អៀង';}
+    70%{content: 'កោះកេរ';}
+    80%{content: "Angkor Wat";}
+    90%{content: 'Ta Prohm Temple';}
+    100%{content: 'Bayon Temple';}
+}
+
+.home .content h5{
+    font-size: 38px;
+    font-weight: 500;
+}
+.home .content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.home .content p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.header{
+    width: 100%;
+    height: 80vh;
+    /* background-color: cadetblue; */
+    margin-top: 20px;
+    text-align: center;
+}
+.header #bg{
+    width: 100%;
+    height: 30%;
+    background-color: cadetblue;
+}
+.header .nav{
+    width: 60%;
+    height: 70%;
+    /* background-color: blue; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav .left{
+    width: 43%;
+    height: 100%;
+    /* background-color: white; */
+    padding: 30px;
+    box-shadow: 1px 1px 7px -1px grey, -1px 1px 7px -1px gray;
+    border-radius: 15px;
+}
+.header .nav .right{
+    width: 52%;
+    height: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./img/bg_new.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+     box-shadow: 40px 40px rgba(172, 255, 47, 0.758);
+     border-radius: 7px;
+}
+.head{
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 10px;
+    border: solid 1px white;
+    background-color: cadetblue;
+}
+.head .all{
+    width: 80vw;
+    /* height: 200vh; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 10px 80px;
+    margin: 0 auto;
+}
+.head .all img{
+    border-radius: 15px;
+}
+.head .all img:hover{
+    transform: scale(1.01);
+    transition: 0.7s;
+    box-shadow: 2px 2px 13px -1px grey, -2px 2px 13px -1px gray;
+}
+.head .all .hleft{
+    width: 32%;
+    height: 200px;
+}
+.head .all .hmiddle{
+    width: 32%;
+    height: 200px;
+}
+.head .all .hright{
+    width: 32%;
+    height: 200px;
+}
+.contact{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+ }
+ .mid{
+    width: 100%;
+    height: 30%;
+    background-color: yellowgreen;
+    position: relative;
+    margin: 60px 0;
+ }
+ .img{
+    position: absolute;
+    top: -50px;
+    right:250px;
+ }
+.img img{
+    border-radius: 10px;
+ }
+ .bot{
+    width: 23%;
+    height:320px;
+    position: absolute;
+    background-color: white;
+    top: -30px;
+    margin-left: 400px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px -1px grey, -1px 1px 5px -1px gray;
+ }
+ .footer{
+    width: 100%;
+    height: 40vh;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+ }
+ .footer .l{
+    color: white;
+    width: 24%;
+    height: 100%;
+    padding: 10px 30px;
+    margin-left: 20px;
+ }
+ .star{
+    color: orange;
+    margin-right: 150px;
+    font-size: 13px;
+ }
+ 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .nav-link{
+        font-size: 12px !important;
+    }
+    main .container-fluid img{
+        width: 100% !important;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .nav-link{
+        font-size: 14px !important;
+    }
+    main .container-fluid img{
+        width: 100% !important;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .nav-link{
+        font-size: 18px !important;
+    }
+    main .container-fluid img{
+        width: 100% !important;
+    }
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .nav-link{
+        font-size: 20px !important;
+    }
+    main .container-fluid img{
+        width: 100% !important;
+    }
+ }
